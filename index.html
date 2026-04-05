@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marcela Iturgoyen | Apoyo Académico Personalizado</title>
-    
     <script src="https://cdn.tailwindcss.com"></script>
-    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    
     <script>
         tailwind.config = {
             theme: {
                 extend: {
                     colors: {
-                        'primario': '#1e3a8a', /* Azul Navy Académico */
-                        'secundario': '#fffbeb', /* Crema Suave de Fondo */
-                        'texto': '#111827', /* Gris Casi Negro */
-                        'acento': '#c2410c' /* Naranja Quemado para Detalles */
+                        'primario': '#1e3a8a',
+                        'secundario': '#fffbeb',
+                        'texto': '#111827',
+                        'acento': '#c2410c'
                     },
                     fontFamily: {
                         'serif': ['Playfair Display', 'serif'],
@@ -27,11 +24,11 @@
             }
         }
     </script>
-    
     <style>
+        html { scroll-behavior: smooth; }
         body { font-family: 'Inter', sans-serif; background-color: #fffbeb; color: #111827; }
-        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 700; }
-        .text-balanced { text-wrap: balance; } /* Mejora el corte de líneas en títulos */
+        h1, h2, h3, h4 { font-family: 'Playfair Display', serif; }
+        .text-balanced { text-wrap: balance; }
     </style>
 </head>
 <body class="leading-relaxed">
@@ -40,45 +37,42 @@
         <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
             <span class="text-2xl font-serif font-bold text-primario">M. Iturgoyen</span>
             <div class="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-texto/80">
+                <a href="#inicio" class="hover:text-primario transition">Inicio</a>
                 <a href="#sobre-mi" class="hover:text-primario transition">Sobre mí</a>
-                <a href="#servicios" class="hover:text-primario transition">Servicios</a>
                 <a href="#estudios" class="hover:text-primario transition">Trayectoria</a>
                 <a href="#contacto" class="hover:text-primario transition">Contacto</a>
             </div>
-            <a href="https://wa.me/5491112345678" class="hidden md:block bg-primario text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-primario/90 transition shadow">
-                Consultar Clases
-            </a>
+            <a href="https://wa.me/5491112345678" class="bg-primario text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:scale-105 transition-all shadow">WhatsApp</a>
         </div>
     </nav>
 
-    <header class="relative py-24 md:py-32 px-6 bg-secundario overflow-hidden border-b border-gray-100">
+    <header id="inicio" class="relative py-20 md:py-32 px-6 bg-secundario border-b border-gray-100">
         <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
-            
-            <div class="md:col-span-6 space-y-8 z-10 text-center md:text-left">
+            <div class="md:col-span-6 space-y-8 text-center md:text-left">
                 <span class="inline-flex items-center gap-2 text-sm font-semibold tracking-widest uppercase text-acento">
-                    <span class="w-10 h-px bg-acento"></span>
-                    Educación y Pedagogía
+                    <span class="w-10 h-px bg-acento"></span> Educación y Pedagogía
                 </span>
-                
                 <h1 class="text-5xl md:text-7xl leading-tight text-texto text-balanced">
                     Apoyo <span class="italic font-normal">Académico</span> Personalizado
                 </h1>
-                
-                <p class="text-xl md:text-2xl text-gray-600 font-light max-w-2xl mx-auto md:mx-0">
-                    Acompañamiento pedagógico integral para estudiantes de nivel primario y secundario en <strong>[Nombre de tu Pueblo]</strong>. Herramientas para el éxito escolar.
+                <p class="text-xl text-gray-600 font-light max-w-xl">
+                    Acompañamiento integral para nivel primario y secundario en <strong>[Tu Pueblo]</strong>. Herramientas reales para el éxito escolar.
                 </p>
-                
-                <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-5 pt-6">
-                    <a href="https://wa.me/5491112345678" class="bg-primario text-white px-10 py-5 rounded-full font-semibold hover:bg-primario/90 transition shadow-xl text-lg flex items-center justify-center gap-3">
-                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.588-5.946 0-6.56 5.338-11.891 11.901-11.891 3.181 0 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.481 8.403 0 6.561-5.338 11.892-11.902 11.892-2.002 0-3.968-.511-5.716-1.483l-6.276 1.644zm7.653-4.888c1.61.947 3.328 1.484 5.163 1.484 5.46 0 9.902-4.443 9.902-9.9s-4.442-9.9-9.902-9.9c-2.646 0-5.132 1.03-6.999 2.897-1.867 1.867-2.895 4.351-2.895 6.996 0 1.939.544 3.738 1.575 5.308l-.98 3.585 3.693-.968zm10.741-7.276c-.279-.14-1.651-.815-1.907-.907-.256-.092-.442-.14-.628.14-.186.279-.718.907-.881 1.092-.163.186-.325.21-.604.07-.279-.14-1.18-.435-2.248-1.388-.829-.738-1.389-1.65-1.551-1.93-.163-.279-.017-.431.122-.571.126-.126.279-.325.419-.489.14-.163.186-.279.279-.465.093-.186.047-.349-.023-.489-.069-.14-.628-1.512-.86-2.07-.224-.544-.442-.471-.628-.481-.161-.008-.347-.01-.533-.01s-.488.07-.744.349c-.256.279-.977.954-.977 2.325s1.023 2.697 1.163 2.883c.14.186 2.013 3.074 4.877 4.312.682.296 1.213.473 1.626.604.686.218 1.31.187 1.802.114.549-.081 1.651-.675 1.883-1.326.232-.651.232-1.21.163-1.326-.069-.114-.256-.186-.535-.326z"/></svg>
-                        Consultar por WhatsApp
-                    </a>
-                    <a href="#servicios" class="group border border-gray-300 px-10 py-5 rounded-full font-semibold hover:border-gray-400 transition text-lg flex items-center justify-center gap-2">
-                        Explorar Servicios
-                        <svg class="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
-                    </a>
+                <div class="flex flex-col sm:row gap-4 justify-center md:justify-start">
+                    <a href="#contacto" class="bg-primario text-white px-10 py-5 rounded-full font-semibold hover:shadow-xl transition-all text-lg text-center">Consultar Clases</a>
+                    <a href="#estudios" class="border border-gray-300 px-10 py-5 rounded-full font-semibold hover:bg-white transition text-lg text-center">Ver Trayectoria</a>
                 </div>
             </div>
-            
-            <div class="md:col-span-6 relative flex justify-center items-center">
-                <div class="absolute inset-0 bg-
+            <div class="md:col-span-6 relative flex justify-center">
+                <div class="absolute inset-0 bg-gray-200/50 rounded-3xl rotate-3 scale-105"></div>
+                <img src="https://images.unsplash.com/photo-1571260899304-425eff4c257b?auto=format&fit=crop&q=80&w=800" class="relative rounded-3xl shadow-2xl border-[12px] border-white aspect-[4/5] object-cover z-10 w-full max-w-sm">
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre-mi" class="py-24 bg-white">
+        <div class="max-w-5xl mx-auto px-6 grid md:grid-cols-12 gap-16 items-center">
+            <div class="md:col-span-5">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800" class="rounded-2xl shadow-xl aspect-square object-cover">
+                    <div class="absolute -bottom-6 -right-6 bg-acento p
